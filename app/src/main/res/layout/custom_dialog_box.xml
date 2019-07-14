@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".6"
+
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:indeterminateDrawable="@drawable/ic_return" />
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:text="Processing"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <ProgressBar
+            android:id="@+id/progress1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight=".05"
+            android:background="@android:color/black"
+            android:indeterminateDrawable="@drawable/ic_return"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialogMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/dialogTitle"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:maxLines="10"
+            android:padding="10dip"
+            android:scrollbars="vertical"
+            android:text=""
+            android:textSize="18sp" >
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight=".6" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <!--     <Button
+                    android:id="@+id/OkButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dialogMessage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dp"
+                    android:text="ok"
+                    >
+                </Button>
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dialogMessage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dip"
+                     android:text="cancel"
+                  /> -->
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
